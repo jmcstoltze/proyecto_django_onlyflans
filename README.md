@@ -1,7 +1,7 @@
 
 # Proyecto: Creación de Sitio Web para una PYME de Venta de Pasteles y Postres
 
-## Descripción del Proyecto - Caso hipotético
+## Descripción del Proyecto
 
 OnlyFlans es una empresa enfocada en el mundo de la pastelería y los postres. Este proyecto tiene como objetivo desarrollar un sitio web para la empresa que permita mostrar sus productos y gestionar interacciones con los clientes.
 
