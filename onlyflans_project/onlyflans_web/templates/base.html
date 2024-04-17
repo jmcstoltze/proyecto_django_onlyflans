@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
         <title>OnlyFlans</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
@@ -33,40 +34,75 @@
                 <div class="collapse navbar-collapse" id="navbarNav">    
                     <ul class="navbar-nav">
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link" href="/">Inicio</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="#">Bienvenido Cliente</a>
+                            <a class="nav-link" href="/bienvenido">Bienvenido Cliente</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="#">Acerca de Onlyflans</a>
+                            <a class="nav-link" href="/acerca">Acerca de Onlyflans</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </div>
-    
+    </div>    
     {% endblock %}
 
     <!-- Header -->
     {% block 'header' %}
     <div>
-        header
+        <header>        
+            <!-- Carrusel de imágenes -->
+            <div id="carrusel_header" class="carousel slide" data-bs-ride="carousel">
+      
+                <!-- Indicadores de imágenes -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrusel_header" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carrusel_header" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carrusel_header" data-bs-slide-to="2"></button>
+                </div>
+          
+                <!-- Contenido de la diapositiva -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="imagen _carrusel" src="{% static 'img/postre1.jpg' %}" alt="postre_flan" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="imagen _carrusel" src="{% static 'img/postre2.jpg' %}" alt="postre_torta" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="imagen _carrusel" src="{% static 'img/postre3.jpg' %}" alt="postre_torta2" class="d-block" style="width:100%">
+                    </div>
+                </div>
+          
+                <!-- Controles laterales -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel_header" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel_header" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </header>
     </div>
     {% endblock %}
     
     <!-- Contenido de la página -->
     {% block 'content' %}
     <div>
-        content
+        <!-- Contenido de index.html, welcome.html, about.html -->
     </div>
     {% endblock %}
 
     <!-- Footer de la página-->
     {% block 'footer' %}
     <div>
-        footer
+        <footer class="footer p-3 mt-3">
+            <div class="container">
+                <span class="text-white">© 2024 <br> Desarrollado por Jose Contreras Stoltze <br> para Desafío Latam</span>
+            </div>
+        </footer>
     </div>
     {% endblock %}
      

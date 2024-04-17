@@ -2,6 +2,27 @@
 {% load static %}
 {% block 'content' %}
 <div>
-    acerca
+    <content id="acerca_de">
+        <div class="container p-3">
+          <div class="row">
+
+            <!-- Primera columna -->
+            <div class="col-md-6">
+              <h2>Nuestra Historia</h2><hr>
+              <img src="{% static 'img/acerca1.jpg' %}" class="img-fluid" alt="acerca_1">
+              <p>Proin vulputate nisi sit amet est blandit facilisis. Pellentesque aliquam augue ut ipsum varius, at suscipit neque hendrerit. Nam nec viverra sapien. Nulla facilisi. Fusce tincidunt, nunc vitae cursus luctus, magna lorem varius sem, auctor tristique felis magna ac mi.</p>
+              <p>Nam dignissim neque ut purus luctus, ac tempor ipsum varius. Aliquam ornare nulla nec massa vestibulum, vel malesuada nulla dignissim. Cras porttitor mi id justo pharetra, eget pharetra nulla euismod. Nullam nec purus bibendum, tincidunt libero eget, ultricies tortor.</p>
+            </div>
+      
+            <!-- Segunda columna -->
+            <div class="col-md-6">
+              <h2>Nuestro Equipo</h2><hr>
+              <p>Proin vulputate nisi sit amet est blandit facilisis. Pellentesque aliquam augue ut ipsum varius, at suscipit neque hendrerit. Nam nec viverra sapien. Nulla facilisi. Fusce tincidunt, nunc vitae cursus luctus, magna lorem varius sem, auctor tristique felis magna ac mi.</p>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac quam vitae justo luctus efficitur nec nec metus. Integer at turpis eget eros faucibus blandit. Maecenas euismod, libero sit amet tempor venenatis, felis elit fermentum velit, id dignissim lorem lacus nec ex.</p>
+              <img src="{% static 'img/acerca2.jpg' %}" class="img-fluid" alt="acerca_2">
+            </div>
+          </div>
+        </div>
+    </content>
 </div>
 {% endblock %}
