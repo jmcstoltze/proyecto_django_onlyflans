@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gakb12+3u+=4505qdk+e6hbaaj4prygr%yv(tq0-7kyqnjob7_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"] # Permitir todos los hosts con *
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'onlyflans_web.apps.OnlyflansWebConfig' # Se agrega la carpeta web vinculada principalmente a las vistas
 ]
 
 MIDDLEWARE = [
