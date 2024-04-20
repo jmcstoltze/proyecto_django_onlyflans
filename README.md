@@ -66,6 +66,41 @@ Este proyecto utiliza un entorno virtual para gestionar las dependencias de Pyth
 2. Activa tu entorno virtual.
 3. Instala las dependencias utilizando el comando: - pip install -r requirements.txt
 
+## Capturas de Pantalla
+
+### Pantalla de Inicio
+
+![Inicio](screenshots/inicio.jpg)
+![Inicio 2](screenshots/inicio2.jpg)
+
+### Pantalla de Bienvenida
+
+![Bienvenido](screenshots/bienvenido.jpg)
+![Bienvenido 2](screenshots/bienvenido2.jpg)
+
+### Acerca de Nosotros
+
+![Acerca](screenshots/acerca.jpg)
+
+### Formulario de Contacto
+
+![Formulario de Contacto](screenshots/formulario_contacto.jpg)
+![Formulario de Contacto 2](screenshots/formulario_contacto2.jpg)
+
+### Éxito
+
+![Éxito](screenshots/exito.jpg)
+
+### Panel de Administración
+
+![Panel de Administración](screenshots/admin_panel.jpg)
+![Panel de Administración 2](screenshots/admin_panel2.jpg)
+
+### Panel de Postres
+
+![Panel de Postres](screenshots/panel_postres.jpg)
+![Panel de Postres 2](screenshots/panel_postres2.jpg)
+
 ## Autor
 
 Jose Contreras Stoltze
