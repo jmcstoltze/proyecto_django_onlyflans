@@ -7,57 +7,21 @@
 
             <h2>Ofertas Especiales</h2><hr>
 
-            <div class="row">
+            <div class="row mb-5">
               <!-- Card para postre -->
 
               {% for postre in postres_publicos %}
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card mb-4">
-                  <img src="{{ postre.image_url }}" class="card-img-top p-3" alt="card1">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card mb-4 h-100 my-3">
+                  <img src="{{ postre.image_url }}" class="card-img-top p-3" alt="card1"/>
                   <div class="card-body">
                     <h5 class="card-title">{{ postre.name }}</h5>
                     <p class="card-text">{{ postre.description }}</p>                    
                   </div>
                 </div>
               </div>
-              {% endfor %}
-              
-              
-              <!-- Postre 2 
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card mb-4">
-                  <img src="{% static 'img/card2.jpeg' %}" class="card-img-top p-3" alt="card2">
-                  <div class="card-body">
-                    <h5 class="card-title">Ullamcorper odio</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id justo justo. Sed sed leo non purus vehicula ullamcorper.</p>
-                    <a href="#" class="btn">Maecenas nec leo</a>
-                  </div>
-                </div>
-              </div> -->
-          
-              <!-- Postre 3 
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card mb-4">
-                  <img src="{% static 'img/card3.jpeg' %}" class="card-img-top p-3" alt="card3">
-                  <div class="card-body">
-                    <h5 class="card-title">Vestibulum ante</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id justo justo. Sed sed leo non purus vehicula ullamcorper.</p>
-                    <a href="#" class="btn">Sed id interdum</a>
-                  </div>
-                </div>
-              </div> -->
-          
-              <!-- Postre 4 
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card mb-4">
-                  <img src="{% static 'img/card4.jpeg' %}" class="card-img-top p-3" alt="card4">
-                  <div class="card-body">
-                    <h5 class="card-title">Sed sed leo</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id justo justo. Sed sed leo non purus vehicula ullamcorper.</p>
-                    <a href="#" class="btn">Vivamus malesuada</a>
-                  </div>
-                </div>
-              </div>-->
+              {% endfor %}              
+                            
             </div>
           </div>
     </content>

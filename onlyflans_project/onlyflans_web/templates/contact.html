@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+<div>
+    <content id="contacto"> 
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 col-sm-12 col-12 pb-5 pt-5">
+                <h2>Formulario de Contacto</h2>
+                <hr>
+                <form id="formulario" action="/contacto" method="post">                                        
+                    {% csrf_token %}
+
+                    <div class="mb-3">                        
+                        <label for="id_customer_name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="id_customer_name" name="customer_name" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_customer_email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="id_customer_email" name="customer_email" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="id_message" name="message" rows="3" placeholder="Ingresa tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>            
+            </div>                      
+        </div>
+    </content>    
+</div>
+{% endblock %}

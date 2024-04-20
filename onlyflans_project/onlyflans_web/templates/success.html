@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+<div>
+    <content id="exito">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6 mx-auto">
+                <h2 class="text-center mt-5">Mensaje Recibido</h2>
+                <hr>
+                <p class="text-center">¡Gracias por contactarte con OnlyFlans, <br> te responderemos en breve!</p>
+                <div class="text-center">
+                  <button onclick="window.location.href='/home'" type="button" class="btn">Volver al inicio</button>
+                </div>
+              </div>
+            </div>
+        </div>         
+    </content>    
+</div>
+{% endblock %}

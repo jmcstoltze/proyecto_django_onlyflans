@@ -61,7 +61,7 @@
   text-align: center;
 }
 
-#bienvenido img {
+#testimonios img {
   width: 260px;
   height: 260px;
   padding: 40px;
@@ -69,14 +69,27 @@
 
 #bienvenido h5 {
   padding-top: 50px;
-  text-align: center;
+  font-style: none;
 }
 
-#bienvenido p {
+#testimonios {
   padding-top: 30px;
   padding-right: 30px;
   text-align: justify;
   font-style: italic;
+}
+
+#testimonios h5 {
+  font-style: none;
+}
+
+#contacto {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#contacto h2 {
+  padding: 30px;
+  text-align: center;
 }
 
 #formulario {
@@ -84,6 +97,14 @@
   padding: 20px;
   border-radius: 10px;
   padding: 30px;
+}
+
+#exito h2, p {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#exito .btn {
+  margin-bottom: 50px;
 }
 
 .footer {

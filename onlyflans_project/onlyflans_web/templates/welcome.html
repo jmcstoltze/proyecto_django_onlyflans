@@ -5,24 +5,10 @@
     <content id="bienvenido">
         <div class="container p-3">
             <h2>Testimonios de Clientes</h2><hr>
-            <div class="row">
+            <div id="testimonios" class="row">
                 <!-- Columna de testimonios de clientes -->
-                <div class="col-lg-8">
+                                    
                     <!-- Tarjetas 1 -->
-                    <div class="card mb-3 m-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="{% static 'img/retrato.jpg' %}" class="img-fluid rounded-start" alt="Foto de cliente">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Carlos Sánchez</h5>
-                                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit eget nunc cursus interdum. Lorem ipsum dolor sit amet, consectetur adipis."</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Tarjetas 2 -->
                     <div class="card mb-3 m-3">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -36,7 +22,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Tarjetas 3 -->
+                    <!-- Tarjetas 2 -->
                     <div class="card mb-3 m-3">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -50,7 +36,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Tarjetas 4 -->
+                    <!-- Tarjetas 3 -->
                     <div class="card mb-3 m-3">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -64,42 +50,26 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Tarjetas 5 -->
-                    <div class="card mb-3 m-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="{% static 'img/retrato6.jpeg' %}" class="img-fluid rounded-start" alt="Foto de cliente">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Isabella Castro</h5>
-                                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit eget nunc cursus interdum. Lorem ipsum dolor sit amet, consectetur adipis."</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                                            
-                </div>
-                <!-- Columna del formulario -->
-                <div class="col-lg-4 p-3">
-                    <!-- Formulario de contacto -->
-                    <form id="formulario">
-                        <h5>Contáctanos</h5>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Mensaje"></textarea>
-                        </div>
-                        <button type="submit" class="btn">Enviar</button>
-                    </form>
-                </div>
             </div>
+
+            <h2>Recetas Únicas</h2><hr>
+            <div id="tarjetas" class="row mb-5">
+                
+                <!-- Cards para postre con estado TRUE-->
+                  
+                {% for postre in postres_privados %}
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                  <div class="card mb-4 h-100 my-3">
+                    <img src="{{ postre.image_url }}" class="card-img-top p-3" alt="card1"/>
+                    <div class="card-body">
+                      <h5 class="card-title">{{ postre.name }}</h5>
+                      <p class="card-text">{{ postre.description }}</p>                    
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+            
+            </div>                                                                                                      
         </div>        
     </content>
 </div>
