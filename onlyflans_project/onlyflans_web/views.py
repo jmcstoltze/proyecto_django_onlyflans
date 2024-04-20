@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
-from .forms import ContactFormForm # Importacion del formulario del modelo
+#from .forms import ContactFormForm # Importacion del formulario del modelo
+
+from .forms import ContactFormModelForm  # Importa el nuevo formulario
 from .models import ContactForm, Flan
 
 # Create your views here.
@@ -34,12 +36,16 @@ def contacto(request):
         # Imprime en la terminal la información del formulario (como parte del desarrollo)
         print(request.POST)
 
-        form = ContactFormForm(request.POST) # Crea instancia del formulario con los datos ingresados
+        # form = ContactFormForm(request.POST) # Crea instancia del formulario con los datos ingresados
+
+        form = ContactFormModelForm(request.POST)
 
         # Si es válido el formulario, redirige a página de inicio
         if form.is_valid():            
 
-            contact_form = ContactForm.objects.create(**form.cleaned_data)
+            # contact_form = ContactForm.objects.create(**form.cleaned_data)
+
+            form.save()    
 
             return HttpResponseRedirect('/exito')
         
@@ -49,7 +55,9 @@ def contacto(request):
     
     # De lo contrario crea instancia vacía para que se muestre en la página
     else:
-        form = ContactFormForm()
+        # form = ContactFormForm()
+
+        form = ContactFormModelForm()
 
     return render(request, "contact.html", {'form': form})
 
