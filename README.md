@@ -73,33 +73,78 @@ Este proyecto utiliza un entorno virtual para gestionar las dependencias de Pyth
 ![Inicio](screenshots/inicio.jpg)
 ![Inicio 2](screenshots/inicio2.jpg)
 
+Sección de la página de inicio.
+
 ### Pantalla de Bienvenida
 
 ![Bienvenido](screenshots/bienvenido.jpg)
 ![Bienvenido 2](screenshots/bienvenido2.jpg)
 
+Sección de bienvenida para usuarios con sesión iniciada.
+
 ### Acerca de Nosotros
 
 ![Acerca](screenshots/acerca.jpg)
+![Acerca 2](screenshots/acerca2.jpg)
+
+Sección con información acerca de la empresa.
+
+### Testimonios
+
+![Testimonios](screenshots/testimonios.jpg)
+
+Sección con testimonios de clientes.
 
 ### Formulario de Contacto
 
+![Contacto](screenshots/contacto.jpg)
 ![Formulario de Contacto](screenshots/formulario_contacto.jpg)
 ![Formulario de Contacto 2](screenshots/formulario_contacto2.jpg)
 
-### Éxito
+Sección para formulario de contacto y mensaje de éxito al enviar el formulario.
 
-![Éxito](screenshots/exito.jpg)
+### Inicio de Sesión
+
+![Inicio de Sesión](screenshots/inicio_sesion.jpg)
+
+Sección para iniciar sesión dentro de la página.
+
+### Bienvenida para Clientes
+
+![Bienvenida para Clientes](screenshots/bienvenida_cliente.jpg)
+![Bienvenida para Clientes 2](screenshots/bienvenida_cliente2.jpg)
+
+Sección para usuarios con sesión iniciada exclusivamente.
+
+### Cerrar Sesión
+
+![Cerrar Sesión](screenshots/cerrar_sesion.jpg)
+
+Botón para cerrar la sesión.
 
 ### Panel de Administración
 
 ![Panel de Administración](screenshots/admin_panel.jpg)
 ![Panel de Administración 2](screenshots/admin_panel2.jpg)
 
+Panel de administración de la página.
+
 ### Panel de Postres
 
 ![Panel de Postres](screenshots/panel_postres.jpg)
 ![Panel de Postres 2](screenshots/panel_postres2.jpg)
+
+Listado de modelo de postres ingresado en el panel de administración.
+
+### Panel de Usuarios
+
+![Panel de Usuarios](screenshots/panel_usuarios.jpg)
+![Panel de Usuario](screenshots/panel_usuario.jpg)
+![Panel de Usuario sin Staff](screenshots/panel_usuario_nostaff.jpg)
+
+Listado de usuarios ingresados en el panel, pero que no son miembros del staff de administradores.
+
+Comentario adicional: La clave tanto para los administradores como para los usuarios es 'desafio-latam2024' para facilitar el uso.
 
 ## Autor
 
