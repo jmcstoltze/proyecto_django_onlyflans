@@ -75,13 +75,6 @@ Este proyecto utiliza un entorno virtual para gestionar las dependencias de Pyth
 
 Sección de la página de inicio.
 
-### Pantalla de Bienvenida
-
-![Bienvenido](screenshots/bienvenido.jpg)
-![Bienvenido 2](screenshots/bienvenido2.jpg)
-
-Sección de bienvenida para usuarios con sesión iniciada.
-
 ### Acerca de Nosotros
 
 ![Acerca](screenshots/acerca.jpg)
@@ -111,8 +104,8 @@ Sección para iniciar sesión dentro de la página.
 
 ### Bienvenida para Clientes
 
-![Bienvenida para Clientes](screenshots/bienvenida_cliente.jpg)
-![Bienvenida para Clientes 2](screenshots/bienvenida_cliente2.jpg)
+![Bienvenida para Clientes](screenshots/bienvenido_cliente.jpg)
+![Bienvenida para Clientes 2](screenshots/bienvenido_cliente2.jpg)
 
 Sección para usuarios con sesión iniciada exclusivamente.
 
