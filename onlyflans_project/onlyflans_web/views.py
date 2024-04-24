@@ -1,10 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
+from django.views import View
+from django.views.generic import TemplateView
+
+from django.utils.decorators import method_decorator
+from django.contrib.auth.decorators import login_required
+
+
 #from .forms import ContactFormForm # Importacion del formulario del modelo
 
 from .forms import ContactFormModelForm  # Importa el nuevo formulario
-from .models import ContactForm, Flan
+from .models import Flan  # ,ContactForm 
 
 # Create your views here.
 def indice(request):
@@ -27,6 +34,9 @@ def bienvenido(request):
 
 def acerca(request):
     return render(request, "about.html", {})
+
+def testimonios(request):
+    return render(request, "testimonials.html", {})
 
 def contacto(request):
 
@@ -63,3 +73,12 @@ def contacto(request):
 
 def exito(request):
     return render(request, "success.html", {})
+
+class LoginRequiredMixin(View):
+
+    @method_decorator(login_required)
+    def dispatch(self, *args, **kwargs):
+        return super().dispatch(*args, **kwargs)
+
+class Welcome(LoginRequiredMixin, TemplateView):
+    template_name = "welcome.html"

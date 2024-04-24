@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"] # Permitir todos los hosts con *
 
+# LOGIN | LOGOUT REDIRECT URLS
+LOGIN_REDIRECT_URL = '/bienvenido'
+LOGOUT_REDIRECT_URL = '/'
 
 # Application definition
 

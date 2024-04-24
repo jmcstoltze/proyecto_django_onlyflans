@@ -2,43 +2,13 @@
 {% load static %}
 {% block 'content' %}
 <div>
-    <content id="bienvenido">
-        
-        <div id="cliente" class="container mt-5 mx-auto">
-            <div class="row">
-              <div class="col">
-                <h2>Bienvenido/a {{ user }}</h2>
-                <p>Tenemos una lista de productos exclusivos para tí. ¿Quieres conocer más?</p>
-                <a class="btn btn-custom" href="/contacto">Contáctanos</a>
-              </div>
-            </div>
-        </div>
-
-        <div class="container p-3">
-            
-            <h2>Recetas Únicas</h2><hr>
-            <div id="tarjetas" class="row mb-5">
-                
-                <!-- Cards para postre con estado TRUE-->
-                  
-                {% for postre in postres_privados %}
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                  <div class="card mb-4 h-100 my-3">
-                    <img src="{{ postre.image_url }}" class="card-img-top p-3" alt="card1"/>
-                    <div class="card-body">
-                      <h5 class="card-title">{{ postre.name }}</h5>
-                      <p class="card-text">{{ postre.description }}</p>                    
-                    </div>
-                  </div>
-                </div>
-                {% endfor %}
-            
-            </div>
-            
-            <!-- Originalmente se encontraban en esta sección, pero ahora tienen una sección propia 
+    <content id="comentarios">
+        <div class="container mt-5 mx-auto">
             <h2>Testimonios de Clientes</h2><hr>
             <div id="testimonios" class="row">
-                
+                <!-- Columna de testimonios de clientes -->
+                                    
+                    <!-- Tarjetas 1 -->
                     <div class="card mb-3 m-3">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -52,7 +22,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <!-- Tarjetas 2 -->
                     <div class="card mb-3 m-3">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -66,7 +36,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <!-- Tarjetas 3 -->
                     <div class="card mb-3 m-3">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -80,8 +50,8 @@
                             </div>
                         </div>
                     </div>
-            </div> -->
-        </div>        
+            </div>            
+        </div>                                
     </content>
 </div>
 {% endblock %}
