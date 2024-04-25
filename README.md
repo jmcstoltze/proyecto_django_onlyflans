@@ -139,6 +139,10 @@ Listado de usuarios ingresados en el panel, pero que no son miembros del staff d
 
 Comentario adicional: La clave tanto para los administradores como para los usuarios es 'desafio-latam2024' para facilitar el uso.
 
+## Presentación Final - PDF
+
+- [Resumen del Proyecto (PDF)](presentacion_final.pdf): Este archivo contiene una presentación final del proyecto que incluye una descripción general, características principales, screenshots y detalles importantes.
+
 ## Autor
 
 Jose Contreras Stoltze
